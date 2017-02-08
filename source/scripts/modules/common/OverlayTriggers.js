@@ -10,8 +10,7 @@ define([
 
     var OVERLAY_TRIGGER_DATA_ATTR = "data-overlay-trigger";
 
-    var OverlayTriggers = function() {
-    };
+    var OverlayTriggers = function() {};
 
     OverlayTriggers.prototype = {
         setupEvents: function() {

@@ -12,13 +12,19 @@ define([
         },
 
         elements: [
-            'exampleModuleButton',
-            'exampleModuleText'
+            "exampleModuleButton",
+            "exampleModuleText"
         ],
 
         events: {
-            'click exampleModuleButton': function(event) {
+            "click exampleModuleButton": function(event) {
                 this.$elements.exampleModuleText.hide().text("Oh hello there").slideDown(150);
+            },
+            "resize": function() {
+                console.log("Window resized");
+            },
+            "scroll": function(scrollTop) {
+                console.log("Page scrolled to: " + scrollTop);
             }
         }
     });
