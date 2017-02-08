@@ -1,0 +1,27 @@
+@import "../_support/support";
+
+// Backgrounds
+
+@each $name in map-keys($background-colors) {
+    .bg-#{$name} {
+        background: map-get($background-colors, $name);
+    }
+}
+
+.bg-inherit {
+    background-color: inherit;
+    will-change: background-color;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+
+// Text
+
+@each $name in map-keys($text-colors) {
+    .text-#{$name} {
+        color: map-get($text-colors, $name);
+    }
+}

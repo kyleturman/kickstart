@@ -1,0 +1,7 @@
+.DS_Store
+.htaccess
+thumbs/
+site/cache/
+license.md
+readme.md
+env.php

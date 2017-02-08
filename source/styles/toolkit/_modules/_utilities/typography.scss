@@ -1,0 +1,28 @@
+@import "../../_support/support";
+
+@each $name in map-keys($breakpoints) {
+    @include breakpoint(#{$name}, up) {
+        .u-text--left\@#{$name}   { text-align: left }
+        .u-text--center\@#{$name} { text-align: center }
+        .u-text--right\@#{$name}  { text-align: right }
+    }
+}
+
+.u-text--strong    { font-weight: bold }
+.u-text--normal    { font-weight: normal }
+.u-text--italic    { font-style: italic }
+
+.u-nowrap     { white-space: nowrap }
+.u-break-word { word-wrap: break-word }
+
+.u-text-truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-list-reset {
+  list-style: none;
+  padding-left: 0;
+}

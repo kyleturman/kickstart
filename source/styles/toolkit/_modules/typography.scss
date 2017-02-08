@@ -1,0 +1,107 @@
+@import "../_support/support";
+
+.text-hero {
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1.1;
+
+    @include breakpoint(wide, down) {
+        font-size: 64px;
+    }
+
+    @include breakpoint(xxl, down) {
+        font-size: 54px;
+    }
+
+    @include breakpoint(xl, down) {
+        font-size: 52px;
+    }
+
+    @include breakpoint(lg, down) {
+        font-size: 48px;
+    }
+
+    @include breakpoint(md, down) {
+        font-size: 40px;
+    }
+}
+
+.text-title {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    @include breakpoint(lg, down) {
+        font-size: 40px;
+    }
+
+    @include breakpoint(md, down) {
+        font-size: 34px;
+    }
+
+    @include breakpoint(sm, down) {
+        font-size: 30px;
+    }
+}
+
+.text-subtitle {
+    font-size: 38px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+
+    @include breakpoint(lg, down) {
+        font-size: 30px;
+    }
+
+    @include breakpoint(md, down) {
+        font-size: 22px;
+    }
+}
+
+.text-meta {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include breakpoint(md, down) {
+        font-size: 10px;
+    }
+}
+
+.text-meta-smaller {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.text-body-larger {
+    font-size: 22px;
+    line-height: 1.6;
+
+    @include breakpoint(md, down) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+     @include breakpoint(sm, down) {
+        font-size: 18px;
+    }
+}
+
+.text-body {
+    font-size: 16px;
+    line-height: 1.4;
+
+    @include breakpoint(md, down) {
+        font-size: 14px;
+    }
+}
+
+.text-body-smaller {
+    font-size: 12px;
+    line-height: 1.6;
+}

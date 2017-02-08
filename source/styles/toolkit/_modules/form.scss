@@ -1,0 +1,29 @@
+@import "../_support/support";
+
+.input, .textarea {
+    border-radius: $radius;
+    border: none;
+    font-size: inherit;
+    resize: vertical;
+    outline: none;
+    padding-top: $spacing-unit * 3;
+    padding-bottom: $spacing-unit * 3;
+    padding-left: $spacing-unit * 4;
+    padding-right: $spacing-unit * 4;
+    display: block;
+    width: 100%;
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba($border-color, 0.75);
+    }
+}
+
+.input--file {
+    box-shadow: 0 0 0 2px rgba($border-color, 0.75);
+    padding-top: $spacing-unit * 6;
+    padding-bottom: $spacing-unit * 6;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $white;
+    }
+}

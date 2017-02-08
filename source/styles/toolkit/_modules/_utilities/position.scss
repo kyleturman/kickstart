@@ -1,0 +1,22 @@
+@import "../../_support/support";
+
+.u-position--fixed    { position: fixed; }
+.u-position--absolute { position: absolute; }
+.u-position--relative { position: relative; }
+.u-position--static   { position: static; }
+
+.u-position--top    { top: 0; }
+.u-position--bottom { bottom: 0; }
+.u-position--left   { left: 0; }
+.u-position--right  { right: 0; }
+
+.u-float--left  { float: left; }
+.u-float--right { float: right; }
+.u-float--none  { float: none; }
+
+.u-rotate--45 { transform: rotate(-45deg); }
+.u-rotate--90 { transform: rotate(-90deg); }
+
+@each $z-index in $z-indexes {
+    .u-z-#{index($z-indexes, $z-index)-1} { z-index: $z-index; }
+}

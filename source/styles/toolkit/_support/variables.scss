@@ -1,0 +1,67 @@
+// Colors
+
+$white: #FFFFFF;
+$black: #000000;
+
+$border-color: rgba(0,0,0,0.35);
+
+$background-colors: (
+    black: $black,
+    white: $white
+);
+
+$text-colors: (
+    black: $black,
+    white: $white
+);
+
+
+// Grid
+
+$grid-columns: 12;
+$block-grid-max-columns: 6;
+
+
+// Breakpoints
+
+$breakpoints: (
+    xs:   0,
+    sm:   480px,
+    md:   640px,
+    lg:   800px,
+    xl:   960px,
+    xxl:  1200px,
+    wide: 1360px,
+    mega: 1420px
+);
+
+
+// Utilities
+
+$border-width: 1px;
+$radius: 8px;
+
+
+// Z-Index
+
+$z-indexes: (
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60
+);
+
+
+// Spacing
+
+$spacing-unit: 4px;
+$max-spacing-number: 8;
+
+
+// Widths
+
+$body-max-width: 1420px;
+

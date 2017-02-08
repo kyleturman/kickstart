@@ -1,0 +1,31 @@
+@import "../_support/support";
+
+.btn {
+    background: transparent;
+    border-radius: $radius;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    outline: none;
+    overflow: hidden;
+    padding: 0.9rem 2rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 200ms ease-out;
+    user-select: none;
+    white-space: nowrap;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+
+    -webkit-tap-highlight-color: transparent; // Fixes a visual bug related to ios button taps
+    -webkit-appearance: none; // Remove default gradient on mobile Safari buttons
+
+    &:hover, &:focus {
+
+    }
+}

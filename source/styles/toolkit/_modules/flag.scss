@@ -1,0 +1,25 @@
+@import "../_support/support";
+
+// Flag
+
+.flag {
+    display: table;
+    width: 100%;
+}
+
+.flag-img {
+    display: table-cell;
+    padding-right: $spacing-unit*4;
+    vertical-align: middle;
+}
+
+.flag-img--right {
+    padding-right: 0;
+    padding-left: $spacing-unit*4;
+}
+
+.flag-body {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}

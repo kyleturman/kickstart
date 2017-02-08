@@ -1,0 +1,30 @@
+@import "../../_support/support";
+
+
+[class*='u-show'] { display: none; }
+
+@each $name in map-keys($breakpoints) {
+    @include breakpoint(#{$name}, only) {
+        .u-hide\@#{$name} { display: none }
+        .u-show\@#{$name} { display: block }
+    }
+}
+
+.u-display--block        { display: block; }
+.u-display--inline-block { display: inline-block; }
+.u-display--inline       { display: inline; }
+.u-display--table        { display: table; }
+.u-display--table-cell   { display: table-cell; }
+.u-display--none         { display: none; }
+
+.u-opacity--75 { opacity: 0.75; }
+.u-opacity--50 { opacity: 0.50; }
+.u-opacity--0  { opacity: 0; }
+
+.u-overflow--hidden {
+    overflow: hidden;
+}
+
+.u-clearfix {
+    @include clearfix;
+}

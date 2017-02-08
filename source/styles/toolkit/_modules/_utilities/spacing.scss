@@ -1,0 +1,71 @@
+// Spacing
+
+@import "../../_support/support";
+
+@each $name in map-keys($breakpoints) {
+    @include breakpoint(#{$name}, up) {
+        @for $i from 0 through $max-spacing-number {
+
+            // Padding
+
+            .u-p-#{$i}\@#{$name} {
+                padding: $spacing-unit*$i;
+            }
+
+            .u-pt-#{$i}\@#{$name} {
+                padding-top: $spacing-unit*$i;
+            }
+
+            .u-pb-#{$i}\@#{$name} {
+                padding-bottom: $spacing-unit*$i;
+            }
+
+            .u-pl-#{$i}\@#{$name} {
+                padding-left: $spacing-unit*$i;
+            }
+
+            .u-pr-#{$i}\@#{$name} {
+                padding-right: $spacing-unit*$i;
+            }
+
+
+            // Margin
+
+            .u-m-#{$i}\@#{$name} {
+                margin: $spacing-unit*$i;
+            }
+
+            .u-mt-#{$i}\@#{$name} {
+                margin-top: $spacing-unit*$i;
+            }
+
+            .u-mb-#{$i}\@#{$name} {
+                margin-bottom: $spacing-unit*$i;
+            }
+
+            .u-ml-#{$i}\@#{$name} {
+                margin-left: $spacing-unit*$i;
+            }
+
+            .u-mr-#{$i}\@#{$name} {
+                margin-right: $spacing-unit*$i;
+            }
+
+
+            // Sections
+            .u-section-#{$i}\@#{$name} {
+                padding-top: $spacing-unit*$i*10;
+                padding-bottom: $spacing-unit*$i*10;
+            }
+
+            .u-section-top-#{$i}\@#{$name} {
+                padding-top: $spacing-unit*$i*10;
+            }
+
+            .u-section-bottom-#{$i}\@#{$name} {
+                padding-bottom: $spacing-unit*$i*10;
+            }
+
+        }
+    }
+}

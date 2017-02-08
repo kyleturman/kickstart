@@ -1,0 +1,38 @@
+@import "../../_support/support";
+
+.u-b {
+  border-style: solid;
+  border-width: $border-width;
+  border-color: $border-color;
+}
+
+.u-b--top {
+  border-top-style: solid;
+  border-top-width: $border-width;
+  border-color: $border-color;
+}
+
+.u-b--right {
+  border-right-style: solid;
+  border-right-width: $border-width;
+  border-color: $border-color;
+}
+
+.u-b--bottom {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+  border-color: $border-color;
+}
+
+.u-b--left {
+  border-left-style: solid;
+  border-left-width: $border-width;
+  border-color: $border-color;
+}
+
+.u-b--none { border: 0 }
+
+.u-circle  { border-radius: 50% }
+
+.u-rounded       { border-radius: $radius }
+.u-rounded--none { border-radius: 0 }
